@@ -13,7 +13,8 @@ import dash_core_components as dcc
 app = dash.Dash()
 
 # Import default CSS styling for font and a bunch of stuff
-app.css.append_css({"external_url": "https://codepen.io/chriddyp/pen/bWLwgP.css"})
+app.css.append_css({"external_url":
+                    "https://codepen.io/chriddyp/pen/bWLwgP.css"})
 
 # A JSON-like dictionary to use as CSS style information
 colors = {
@@ -24,7 +25,8 @@ colors = {
 # Define the layout, which is a tree of components:
 # a div which contains a heading, a div and a graph
 # Components are described entirely through their keyword attributes
-app.layout = html.Div(style={'backgroundColor': colors['background']}, children=[
+app.layout = html.Div(style={'backgroundColor': colors['background']},
+                      children=[
     # Generates <h1>Wow, a Python web app!</h1>
     # 'children' is always 1st attribute; can omit, e.g. html.H1('Hello Dash')
     html.H1(
